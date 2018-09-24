@@ -1,0 +1,22 @@
+/* alter header colors to blue, centering on h2 */
+
+h1 {
+      font-size: 14pt;
+      color: blue;
+      text-decoration: underline;
+}
+
+h2 {
+      font-size: 12pt;
+      color: blue;
+      text-decoration: underline;
+      text-align: center;
+}
+
+body {
+      width: 475px;
+      background: white;
+      font-family: "Times New Roman", Verdana;
+      font-size: 12pt;
+      color: black;
+}
