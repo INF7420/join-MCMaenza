@@ -1,29 +1,40 @@
+/* style sheet for Martin's Portfolio */
+
+/* shared layout related definitions */
+
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure,
+figcaption {
+      display: block;
+}
+
 body {
-      width: "100%";
+      width: 100%;
       background: white;
       font-family: "Times New Roman", Verdana;
       font-size: 12pt;
       color: black;
 }
 
-div.page {
+.wrapper {
       background: white;
-      width: 500;
-      margin: 5px 5px;
-      padding: 5px 5px;
+      max-width: 940px;
+      min-width: 720px;
+      margin: 10px auto 10px auto;
+      padding: 10px;
 }
 
 header {
       width: 100%;
       padding: 10px 10px 10px 10px;
-      color: white;
-}
-
-footer {
-      width: 100%;
-      padding: 10px 10px 10px 10px;
-      color: black;
+      color: lightgray;
       background-color: lightgray;
+      display: flex;
 }
 
 .logo {
@@ -32,27 +43,84 @@ footer {
       margin: 10px 10px 10px 10px;
 }
 
-nav {
+.main-navigation {
       float: left;
       width: "30%";
-      margin: 10px 10px 10px 10px;
+      margin: 10px 0px 10px 0px;
 }
 
-.main {
-      float: left;
-      width: "100%";
-      margin: 10px 10px 10px 10px;
+.main-navigation ul {
+      list-style: none;
+      text-align: center;
 }
 
-.wrapper {
+main {
       float: left;
-      width: "100%";
-      margin: 10px 10px 10px 10px;
+      width: 720px;
+      margin: 10px 10px 10px 0px;
+      overflow: auto;
+      height: 100%
 }
+
+footer {
+      width: 100%;
+      float: left;
+      padding: 10px 10px 10px 10px;
+      color: black;
+      background-color: lightgray;
+      display: flex;
+}
+
+.copyright {
+      float: left;
+      width: 400px;
+      margin: 10px 10px 10px 30px;
+}
+
+
+/* about page specific layout definitions */
+
+.about1of2 {
+      float: left;
+      width: 65%;
+      margin: 0px 0px 0px 0px;
+      background-color: lightgray;
+}
+
+.about2of2 {
+      float: left;
+      width: 25%;
+      margin: 0px 0px 0px 40px;
+}
+
+
+/* home page specific layout definitions */
+
+.home1of2 {
+      float: left;
+      width: 60%;
+      margin: 0px 0px 0px 0px;
+}
+
+.home2of2 {
+      float: left;
+      width: 35%;
+      margin: 0px 0px 0px 10px;
+      background-color: lightgray;
+}
+
+
+/* header related definitions */
 
 h1 {
       font-size: 14pt;
       color: black;
+      text-decoration: underline;
+}
+
+h1.blue {
+      font-size: 14pt;
+      color: blue;
       text-decoration: underline;
 }
 
@@ -62,37 +130,55 @@ h2 {
       text-decoration: underline;
 }
 
+h2.blue {
+      font-size: 12pt;
+      color: blue;
+      text-decoration: underline;
+      text-align: center;
+}
+
+h2.blue-left {
+      font-size: 12pt;
+      color: blue;
+      text-decoration: underline;
+      text-align: left;
+}
+
 h3 {
       font-size: 12pt;
-      text-align: right;
+      color: black;
+      text-align: center;
 }
+
+h3.blue {
+      font-size: 12pt;
+      color: blue;
+      text-align: center;
+}
+
+
+/* color related definitions */
 
 .blue {
       color: blue;
-      background: white
 }
 
 .black {
       color: black;
-      background: white
 }
 
 .blackbold {
       color: black;
       font-weight: bold;
-      font-size: 11pt;
-      background: white
 }
 
 .blackitalic {
       color: black;
-      background: white;
       font-style: italic;
 }
 
-.underline {
-      text-decoration: underline
-}
+
+/* paragraph related definitions */
 
 p {
       text-align: left;
@@ -107,6 +193,8 @@ p.right {
       text-align: right;
 }
 
+
+/* anchor related definitions */
 
 a {
       text-decoration: underline;
@@ -125,10 +213,92 @@ a:visited {
       color: blue
 }
 
+
+/* table related definitions */
+
 table {
       width: 100%;
 }
 
 td {
-      padding: 1em
+      padding: 2px;
+}
+
+table.contacts {
+      width: 250px;
+}
+
+
+/* button related definitions */
+
+.btn {
+      border: 3px solid white;
+      background-color: darkblue;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 136px;
+      height: 47px;
+}
+
+.btn-bold {
+      border: 3px solid white;
+      background-color: darkblue;
+      color: white;
+      padding: 14px 28px;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 136px;
+      height: 50px;
+}
+
+.btn-gray {
+      border: 3px solid lightgray;
+      background-color: darkblue;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 136px;
+      height: 47px;
+}
+
+.btn-gray-bold {
+      border: 3px solid lightgray;
+      background-color: darkblue;
+      color: white;
+      padding: 14px 28px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 136px;
+      height: 50px;
+}
+
+
+/* list related definitions */
+
+li.inline {
+      display: inline;
+}
+
+li.nobullet {
+      list-style-type: none;
+}
+
+ul.nobullet {
+      list-style-type: none;
+}
+
+
+/* miscellaneous related definitions */
+
+.underline {
+      text-decoration: underline
+}
+
+img {
+      max-width: 100%;
 }
