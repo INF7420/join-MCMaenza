@@ -43,20 +43,11 @@ header {
       margin: 10px 10px 10px 10px;
 }
 
-.main-navigation {
-      float: left;
-      width: "30%";
-      margin: 10px 0px 10px 0px;
-}
-
-.main-navigation ul {
-      list-style: none;
-      text-align: center;
-}
 
 main {
       float: left;
-      width: 720px;
+      max-width: 940px;
+      min-width: 720px;
       margin: 10px 10px 10px 0px;
       overflow: auto;
       height: 100%
@@ -98,13 +89,13 @@ footer {
 
 .home1of2 {
       float: left;
-      width: 60%;
+      width: 50%;
       margin: 0px 0px 0px 0px;
 }
 
 .home2of2 {
       float: left;
-      width: 35%;
+      width: 40%;
       margin: 0px 0px 0px 10px;
       background-color: lightgray;
 }
@@ -168,6 +159,12 @@ h3.blue {
 }
 
 .blackbold {
+      color: black;
+      font-weight: bold;
+}
+
+.blackboldbig {
+      font-size: 22pt;
       color: black;
       font-weight: bold;
 }
@@ -238,8 +235,8 @@ table.contacts {
       padding: 14px 28px;
       font-size: 16px;
       cursor: pointer;
-      width: 136px;
-      height: 47px;
+      width: 160px;
+      height: 50px;
 }
 
 .btn-bold {
@@ -247,10 +244,33 @@ table.contacts {
       background-color: darkblue;
       color: white;
       padding: 14px 28px;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: bold;
       cursor: pointer;
-      width: 136px;
+      width: 160px;
+      height: 55px;
+}
+
+.btn-drop {
+      border: 1px solid lightgray;
+      background-color: darkblue;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 160px;
+      height: 50px;
+}
+
+.btn-drop-bold {
+      border: 3px solid lightgray;
+      background-color: darkblue;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 160px;
       height: 50px;
 }
 
@@ -261,8 +281,8 @@ table.contacts {
       padding: 14px 28px;
       font-size: 16px;
       cursor: pointer;
-      width: 136px;
-      height: 47px;
+      width: 160px;
+      height: 50px;
 }
 
 .btn-gray-bold {
@@ -273,8 +293,42 @@ table.contacts {
       font-size: 20px;
       font-weight: bold;
       cursor: pointer;
-      width: 136px;
-      height: 50px;
+      width: 160px;
+      height: 55px;
+}
+
+
+/* navigation related definitions */
+
+.main-navigation {
+      float: left;
+      width: "30%";
+      margin: 10px 0px 10px 0px;
+}
+
+.main-navigation ul {
+      list-style: none;
+      text-align: center;
+}
+
+.main-navigation li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 
@@ -290,6 +344,17 @@ li.nobullet {
 
 ul.nobullet {
       list-style-type: none;
+}
+
+
+/* form related definitions */
+
+input:invalid {
+  border: 2px solid black;
+}
+
+input:valid {
+  border: 1px solid black;
 }
 
 
