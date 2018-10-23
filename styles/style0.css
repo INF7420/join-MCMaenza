@@ -89,7 +89,7 @@ footer {
 
 .home1of2 {
       float: left;
-      width: 50%;
+      width: 55%;
       margin: 0px 0px 0px 0px;
 }
 
@@ -219,11 +219,19 @@ table {
 
 td {
       padding: 2px;
+      vertical-align: top;
 }
 
 table.contacts {
-      width: 250px;
+      width: 300px;
 }
+
+td.contacts {
+      padding: 0px;
+      vertical-align: middle;
+}
+
+
 
 
 /* button related definitions */
