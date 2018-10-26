@@ -23,8 +23,7 @@ body {
 
 .wrapper {
       background: white;
-      max-width: 940px;
-      min-width: 720px;
+      width: 100%;
       margin: 10px auto 10px auto;
       padding: 10px;
 }
@@ -46,8 +45,7 @@ header {
 
 main {
       float: left;
-      max-width: 940px;
-      min-width: 720px;
+      width: 100%;
       margin: 10px 10px 10px 0px;
       overflow: auto;
       height: 100%
