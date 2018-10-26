@@ -94,9 +94,9 @@ footer {
 }
 
 .home2of2 {
-      float: left;
-      width: 40%;
-      margin: 0px 0px 0px 10px;
+      float: right;
+      width: 35%;
+      margin: 0px 0px 0px 0px;
       background-color: lightgray;
 }
 
