@@ -355,12 +355,25 @@ ul.nobullet {
 
 /* form related definitions */
 
+label {
+   display: block;
+   font-weight: bold;
+}
+
+.label-normal {
+   font-weight: normal;
+}
+
+input {
+   display: inline-block;
+}
+
 input:invalid {
-  border: 2px solid black;
+   border: 2px solid black;
 }
 
 input:valid {
-  border: 1px solid black;
+   border: 1px solid black;
 }
 
 
