@@ -37,39 +37,39 @@
 
         <main>
             <!-- this is a form for submitting an email -->
-            <form name="myForm" novalidate action="https://formspree.io/mcmaenza@aol.com" method="POST" onsubmit="return validateForm();" >
-              <fieldset>
-                 <br />
-                 <label for="name">
-                    Your Name (*):
-                    <input type="text" id="name" name="name" required size="30" minlength ="2" maxlength="100" />
+            <form name="myForm" action="https://formspree.io/mcmaenza@aol.com" method="POST" class="validate" novalidate >
+               <div>
+                 <label for="name">Your Name (*):
+                   <input type="text" id="name" name="name" class="form-input" required minlength="2" maxlength="100" />
                  </label>
-                 <br />
-                 <label for="email">
-                    Your Email Address (*):
-                    <input type="email" id="email" name="email" required size="30" minlength ="6" maxlength="100" />
+               </div>
+               <div>
+                 <label for="email">Your Email Address (*):
+                   <input type="email" id="email" name="email" class="form-input" required />
                  </label>
-                 <p>(*) denotes a required field</p>
-                 <label for="message">
-                    Your Message:<br /><br />
-                    <textarea id="message" name="message" rows="8" cols="70"></textarea>
+               </div>
+               <p>(*) denotes a required field</p>
+               <div>
+                 <label for="message">Your Message:<br /><br />
+                   <textarea id="message" name="message" class="form-input" ></textarea>
                  </label>
-                 <br />
-                 <label for="subscribe">
-                   Subscribe To Updates:
-                 </label>
-                 <label class="label-normal">
-                    <input type="radio" id="subscribe-Yes" name="sub" value="Yes" checked="checked" />
-                    Yes
+               </div>
+               <div>
+                 <label for="subscribe">Subscribe To Updates:<br /><br />
                  </label>
                  <label class="label-normal">
-                    <input type="radio" id="subscribe-No" name="sub" value="No" />
-                     No
+                    <input type="radio" id="subscribe-Yes" name="sub" value="Yes" checked="checked" />Yes
                  </label>
-                 <br />
+                 <label class="label-normal">
+                    <input type="radio" id="subscribe-No" name="sub" value="No" />No
+                 </label>
+                 <br /><br />
+               </div>
+               <div>
                  <input type="submit" value="Send Message" />
-                 <input type="hidden" name="_next" value="https://inf7420.github.io/maenza-project/thanks.html" />
-              </fieldset>
+                 <input type="hidden" name="_next" value="https://inf7420.github.io/maenza-project/thanks.html" /> 
+                 <input type="hidden" name="_subject" value="Email from Martin's Portfolio" />
+               </div>
             </form>
         </main> <!-- end of content -->
 

@@ -355,6 +355,30 @@ ul.nobullet {
 
 /* form related definitions */
 
+form {
+  width: 75%;
+  margin: 1em 0 0 2em;
+}
+
+.form-input {
+  border: 2px solid #ccc;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid #1565C0;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
 label {
    display: block;
    font-weight: bold;
@@ -368,14 +392,20 @@ input {
    display: inline-block;
 }
 
-input:invalid {
-   border: 2px solid black;
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 
-input:valid {
-   border: 1px solid black;
+.error {
+  border-color: #C62828;
 }
 
+.error-message {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: #C62828;
+}
 
 /* miscellaneous related definitions */
 
