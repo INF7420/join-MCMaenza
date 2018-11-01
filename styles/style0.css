@@ -405,6 +405,7 @@ input[type=submit]:hover {
   margin-top: -1em;
   margin-bottom: 1em;
   color: #C62828;
+  font-weight: bold;
 }
 
 /* miscellaneous related definitions */
