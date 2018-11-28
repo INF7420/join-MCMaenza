@@ -85,15 +85,15 @@ footer {
 
 /* home page specific layout definitions */
 
-.home1of2 {
+.home1 {
       float: left;
-      width: 55%;
+      width: 75%;
       margin: 0px 0px 0px 0px;
 }
 
-.home2of2 {
-      float: right;
-      width: 35%;
+.chglog {
+      float: left;
+      width: 100%;
       margin: 0px 0px 0px 0px;
       background-color: lightgray;
 }
@@ -218,6 +218,10 @@ table {
 td {
       padding: 2px;
       vertical-align: top;
+}
+
+table.changelog {
+      width: 500px;
 }
 
 table.contacts {
@@ -405,7 +409,6 @@ input[type=submit]:hover {
   margin-top: -1em;
   margin-bottom: 1em;
   color: #C62828;
-  font-weight: bold;
 }
 
 /* miscellaneous related definitions */
